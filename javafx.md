@@ -31,3 +31,12 @@ Read before building any JavaFX UI. The general Java rules are in `java.md`.
 	- Consider adding ScenicView, but adding `ScenicView.show(scene);` BEFORE showing the stage adding ( you will ned to `import org.scenicview.ScenicView;` and include dependency `org.scenicview:scenicview:1.0.0` in pom ) keep all this commented out in general, the user can enable need on basis both in pom and ApplicationMain
 
 - For a resident JavaFX app (tray, daemon), also read `resident-apps-memory.md`: never poll with an endless `Timeline`.
+
+- Useful JavaFX libraries and apps
+	- Scenic View — inspect the state of a running JavaFX app: https://github.com/JonathanGiles/scenic-view
+	- MDFX — markdown rendering: https://github.com/JPro-one/JPro-Platform/tree/main/jpro-mdfx
+	- FXRibbon: https://github.com/dukke/FXRibbon
+	- StagePro — menu in the title bar: https://github.com/techsenger/stagepro
+	- tiwulfx-dock — docking panes: https://github.com/panemu/tiwulfx-dock
+	- FXTrayIcon — system tray: https://github.com/dustinkredmond/FXTrayIcon
+	- Others worth knowing: ControlsFX, FXSampler, GemsFX, CSSFX, RichTextFX, TerminalFX, DataFX. JavaFX spreadsheet (scalable-components.com) is paid.

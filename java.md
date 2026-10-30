@@ -11,6 +11,10 @@ Read this before writing even one line of Java. It holds the rules that apply to
 - **Deploying to Maven Central** → `maven-central-publishing.md` (Maven 3 for deploy, the silent no-publish failure, limits, snapshots, parent POMs).
 - **The user shows inclination for self-typed generic interfaces** → `self-typed-generics.md`.
 - **A one-off script or small coding task** → `small-java-scripts.md`.
+- **Using ArcadeDB through datapotter-arcadedbhelper** → `arcadedb.md`, the complete worked guide (graph modelling, links, embedded types, the database-service pattern, CRUD, the type-safe query API, transactions, lifecycle; earlier versions are in git history). Also `arcadedb-datapotter-migration.md` (old xyz-jphil coordinates to datapotter) and `arcadedb-logging.md` (ArcadeDB's java.util.logging into SLF4J/Logback).
+- **Calling native code through FFM with jextract** → `jextract.md`.
+- **Measuring Java code performance** (benchmarks, profilers) → `performance-measurement.md`.
+- **GraalVM native image / AOT** (Oracle GraalVM 25.4, reachability annotations, StaticFX for JavaFX) → `graalvm.md` and the notes in `graalvm/`. Read them first; whoever learns something new about GraalVM writes it back there, so it is never re-learnt.
 - **TeaVM (compiling Java to native C, or to JS/Wasm)** - if using TeaVM for ANY purpose, DO NOT proceed (choosing a C compiler, writing @Import bindings, debugging a compile/link/runtime error) without reading `teavm.md` first. It carries hard-won toolchain gotchas (which C compiler actually pairs with TeaVM's C backend, required shims, compile flags, classlib traps like System.exit being a no-op) discovered in littlejlib/jr PRP-07 - rediscovering these from scratch each time wastes real effort.
 - **Any C code, or Java/TeaVM code touching raw pointers** → `../guidelines-coding/c-memory-safety.md`.
 
